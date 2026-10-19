@@ -3,7 +3,7 @@ if (!databaseUrl && process.env.NODE_ENV === "production") {
 throw new Error("DATABASE_URL is required in production");
 }
 export const env = {
-port: Number(process.env.PORT) || 3000,
+port: Number(process.env.PORT) || 5001,
 nodeEnv: process.env.NODE_ENV ?? "development",
 databaseUrl: databaseUrl ?? "postgresql://postgres@localhost:5432/todo",
 };
